@@ -1,401 +1,284 @@
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>The Journal of Wild Culture – Sunday Edition</title>
-	<style type="text/css">
-		/* Reset */
-		body,
-		#bodyTable {
-			margin: 0 !important;
-			padding: 0 !important;
-			width: 100% !important;
-		}
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Journal of Wild Culture – Sunday Edition</title>
+  <!--[if mso]>
+  <style type="text/css">
+    body, table, td { font-family: Georgia, 'Times New Roman', serif !important; }
+  </style>
+  <![endif]-->
+  <style type="text/css">
+    /* Only media queries here — Gmail strips this but that's ok, mobile fallback */
+    @media only screen and (max-width: 599px) {
+      #templateContainer { width: 100% !important; }
 
-		body {
-			-webkit-text-size-adjust: 100%;
-			-ms-text-size-adjust: 100%;
-			background-color: #f4f0eb;
-		}
+      .article-cell-img,
+      .article-cell-text {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 0 !important;
+      }
 
-		table,
-		td {
-			mso-table-lspace: 0pt;
-			mso-table-rspace: 0pt;
-			border-collapse: collapse !important;
-		}
+      .article-cell-img {
+        padding-bottom: 16px !important;
+      }
 
-		img {
-			border: 0;
-			height: auto;
-			line-height: 100%;
-			outline: none;
-			text-decoration: none;
-			-ms-interpolation-mode: bicubic;
-			display: block;
-		}
+      .article-img img {
+        width: 100% !important;
+        max-width: 260px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+      }
 
-		a {
-			color: inherit;
-		}
+      .spacer-col {
+        display: none !important;
+        width: 0 !important;
+        max-width: 0 !important;
+        overflow: hidden !important;
+      }
 
-		/* Wrapper */
-		#templateContainer {
-			max-width: 620px;
-			margin: 0 auto;
-			background-color: #ffffff;
-		}
-
-		/* Header */
-		.header-logo img {
-			max-width: 100%;
-			height: auto;
-		}
-
-		/* Title area */
-		.edition-title {
-			font-family: Georgia, 'Times New Roman', serif;
-			font-size: 13px;
-			color: #888888;
-			letter-spacing: 2px;
-			text-transform: uppercase;
-			text-align: center;
-			padding: 18px 20px 4px;
-		}
-
-		.edition-name {
-			font-family: Georgia, 'Times New Roman', serif;
-			font-size: 22px;
-			color: #3a3a3a;
-			text-align: center;
-			padding: 2px 20px 4px;
-			letter-spacing: 3px;
-			text-transform: uppercase;
-		}
-
-		.edition-date {
-			font-family: Georgia, 'Times New Roman', serif;
-			font-size: 13px;
-			color: #aaaaaa;
-			text-align: center;
-			padding: 2px 20px 18px;
-		}
-
-		.divider {
-			border: none;
-			border-top: 1px solid #e0d9d0;
-			margin: 0 40px;
-		}
-
-		/* Article row */
-		.article-row {
-			padding: 32px 40px;
-		}
-
-		.article-img img {
-			width: 220px;
-			height: 220px;
-			object-fit: cover;
-		}
-
-		.article-text-right {
-			text-align: right;
-		}
-
-		.article-text-left {
-			text-align: left;
-		}
-
-		.article-title {
-			font-family: Georgia, 'Times New Roman', serif;
-			font-size: 20px;
-			line-height: 26px;
-			color: #1a1a1a;
-			text-transform: uppercase;
-			margin: 0 0 10px 0;
-		}
-
-		.article-desc {
-			font-family: Georgia, 'Times New Roman', serif;
-			font-size: 15px;
-			line-height: 23px;
-			color: #444444;
-			margin: 0;
-		}
-
-		.article-author {
-			font-family: Georgia, 'Times New Roman', serif;
-			font-size: 14px;
-			color: #777777;
-			margin: 8px 0 0;
-			font-style: italic;
-		}
-
-		/* Social / CTA */
-		.cta-area {
-			padding: 28px 40px;
-			text-align: center;
-		}
-
-		.cta-area p {
-			font-family: Georgia, 'Times New Roman', serif;
-			font-size: 13px;
-			line-height: 22px;
-			color: #555555;
-			margin: 0;
-		}
-
-		.cta-area a {
-			color: #8B4513;
-			text-decoration: underline;
-		}
-
-		/* Footer */
-		.footer-logo {
-			padding: 0px 20px 12px 20px;
-			text-align: center;
-		}
-
-		.footer-logo img {
-			max-width: 180px;
-			margin: 0 auto;
-		}
-
-		.footer-text {
-			font-family: Georgia, 'Times New Roman', serif;
-			font-size: 11px;
-			line-height: 18px;
-			color: #aaaaaa;
-			text-align: center;
-			padding: 0 30px 28px;
-		}
-
-		.footer-text a {
-			color: #aaaaaa;
-			text-decoration: none;
-		}
-
-		/* Responsive */
-		@media only screen and (max-width: 599px) {
-			#templateContainer {
-				width: 100% !important;
-			}
-
-			.article-row {
-				padding: 24px 20px !important;
-			}
-
-			.article-cell-img,
-			.article-cell-text {
-				display: block !important;
-				width: 100% !important;
-				text-align: center !important;
-			}
-
-			.article-cell-img {
-				padding-bottom: 16px !important;
-			}
-
-			.article-text-right,
-			.article-text-left {
-				text-align: center !important;
-			}
-
-			.article-img img {
-				width: 100% !important;
-				max-width: 280px !important;
-				height: auto !important;
-				margin: 0 auto !important;
-			}
-
-			.spacer-col {
-				display: none !important;
-				width: 0 !important;
-			}
-
-			.cta-area {
-				padding: 20px !important;
-			}
-
-			.divider {
-				margin: 0 20px !important;
-			}
-		}
-	</style>
+      .article-row-td {
+        padding: 24px 16px !important;
+      }
+    }
+  </style>
 </head>
 
-<body>
-	<table width="100%" border="0" cellspacing="0" cellpadding="0" id="bodyTable" bgcolor="#f4f0eb">
-		<tr>
-			<td valign="top" align="center" style="padding: 20px 10px;">
+<body style="margin:0 !important; padding:0 !important; background-color:#f4f0eb; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;">
 
-				<table width="620" border="0" cellspacing="0" cellpadding="0" id="templateContainer" align="center">
+<!-- Outer wrapper -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; background-color:#f4f0eb;">
+  <tr>
+    <td align="center" valign="top" style="padding:20px 10px;">
 
-					<!-- HEADER LOGO -->
-					<tr>
-						<td class="header-logo">
-							<a href="http://www.wildculture.com/" target="_blank">
-								<img src="https://keshurgojiya.github.io/Wild-Culture-Sunday-Edition-New-Template/images/JWC Letters.jpg"
-									alt="Journal of Wild Culture" width="620" style="max-width:100%; display:block;">
-							</a>
-						</td>
-					</tr>
+      <!-- Main container -->
+      <table id="templateContainer" width="620" border="0" cellspacing="0" cellpadding="0" align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; background-color:#ffffff; max-width:620px;">
 
-					<!-- EDITION TITLE -->
-					<tr>
-						<td>
-							<p class="edition-title">The Journal of Wild Culture</p>
-							<p class="edition-name">&#x2728; Sunday Edition &#x2728;</p>
-							<p class="edition-date">April 19, 2020</p>
-							<hr class="divider" style="padding-bottom: 20px;">
-						</td>
-					</tr>
+        <!-- ===== HEADER LOGO ===== -->
+        <tr>
+          <td style="padding:0; line-height:0; font-size:0;">
+            <a href="http://www.wildculture.com/" target="_blank" style="display:block; line-height:0; font-size:0;">
+              <img src="https://keshurgojiya.github.io/Wild-Culture-Sunday-Edition-New-Template/images/JWC Letters.jpg"
+                alt="Journal of Wild Culture"
+                width="620"
+                style="display:block; border:0; max-width:100%; height:auto; -ms-interpolation-mode:bicubic; padding-top: 24px;">
+            </a>
+          </td>
+        </tr>
 
-					<!-- ARTICLES WRAPPER WITH BACKGROUND -->
-					<tr>
-						<td background="https://keshurgojiya.github.io/Wild-Culture-Sunday-Edition-New-Template/images/W-CULTURE-ICON-LIGHT-GREEN.png"
-							style="background-image: url('https://keshurgojiya.github.io/Wild-Culture-Sunday-Edition-New-Template/images/W-CULTURE-ICON-LIGHT-GREEN.png'); background-repeat: no-repeat; background-position: center center; background-size: 70%;">
-							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <!-- ===== EDITION TITLE ===== -->
+        <tr>
+          <td align="center" style="padding:22px 20px 0; font-family:Georgia,'Times New Roman',serif; font-size:13px; color:#888888; letter-spacing:2px; text-transform:uppercase; mso-line-height-rule:exactly; line-height:20px;">
+            The Journal of Wild Culture
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding:6px 20px 6px; font-family:Georgia,'Times New Roman',serif; font-size:22px; color:#3a3a3a; letter-spacing:3px; text-transform:uppercase; mso-line-height-rule:exactly; line-height:30px;">
+            ✨ Sunday Edition ✨
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding:0 20px 18px; font-family:Georgia,'Times New Roman',serif; font-size:13px; color:#aaaaaa; mso-line-height-rule:exactly; line-height:20px;">
+            April 19, 2020
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0 40px 20px;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+              <tr>
+                <td style="border-top:1px solid #e0d9d0; font-size:0; line-height:0;">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
 
-								<!-- ARTICLE 1: Text Left / Image Right -->
-								<tr>
-									<td class="article-row">
-										<table width="100%" border="0" cellspacing="0" cellpadding="0">
-											<tr>
-												<td class="article-cell-text article-text-right" valign="middle"
-													width="260" style="padding-right: 20px;">
-													<p class="article-title">How to Think Like<br><strong>a
-															Commoner</strong></p>
-													<p class="article-desc">Now more than ever we can benefit from a
-														better understanding of how to share our common resources.</p>
-													<p class="article-author">By David Bollier</p>
-												</td>
-												<td class="spacer-col" width="20" style="font-size:0; line-height:0;">
-													&nbsp;</td>
-												<td class="article-cell-img article-img" valign="middle" width="220"
-													align="right">
-													<a href="https://wildculture.com/article/think-commoner/2039"
-														target="_blank">
-														<img src="https://keshurgojiya.github.io/Wild-Culture-Sunday-Edition-New-Template/images/first.jpg"
-															alt="How to Think Like a Commoner" width="220" height="220"
-															style="display:block; border:0;">
-													</a>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
+        <!-- ===== ARTICLES WITH BACKGROUND ===== -->
+        <tr>
+          <td background="https://keshurgojiya.github.io/Wild-Culture-Sunday-Edition-New-Template/images/W-CULTURE-ICON-LIGHT-GREEN.png"
+              style="background-image:url('https://keshurgojiya.github.io/Wild-Culture-Sunday-Edition-New-Template/images/W-CULTURE-ICON-LIGHT-GREEN.png'); background-repeat:no-repeat; background-position:center center; background-size:72%;">
 
-								<!-- ARTICLE 2: Image Left / Text Right -->
-								<tr>
-									<td class="article-row">
-										<table width="100%" border="0" cellspacing="0" cellpadding="0">
-											<tr>
-												<td class="article-cell-img article-img" valign="middle" width="220"
-													align="left">
-													<a href="https://wildculture.com/article/seeing-strangers-notes-photographers-life/2038"
-														target="_blank">
-														<img src="https://keshurgojiya.github.io/Wild-Culture-Sunday-Edition-New-Template/images/second.jpg"
-															alt="Seeing Strangers" width="220" height="220"
-															style="display:block; border:0;">
-													</a>
-												</td>
-												<td class="spacer-col" width="20" style="font-size:0; line-height:0;">
-													&nbsp;</td>
-												<td class="article-cell-text article-text-left" valign="middle"
-													width="260" style="padding-left: 20px;">
-													<p class="article-title"><strong>Seeing Strangers:</strong><br>Notes
-														from a Photographer's Life</p>
-													<p class="article-desc">A woman with a camera explains when and why
-														she and her subjects click — and what's in it for her.</p>
-													<p class="article-author">By Debra Friedman</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
 
-								<!-- ARTICLE 3: Text Left / Image Right -->
-								<tr>
-									<td class="article-row">
-										<table width="100%" border="0" cellspacing="0" cellpadding="0">
-											<tr>
-												<td class="article-cell-text article-text-right" valign="middle"
-													width="260" style="padding-right: 20px;">
-													<p class="article-title">The Way of<br><strong>the
-															Collagist</strong></p>
-													<p class="article-desc">In the right hands, scraps of paper glued
-														together can reward everyone.</p>
-													<p class="article-author">By David Young</p>
-												</td>
-												<td class="spacer-col" width="20" style="font-size:0; line-height:0;">
-													&nbsp;</td>
-												<td class="article-cell-img article-img" valign="middle" width="220"
-													align="right">
-													<a href="https://www.wildculture.com/article/way-collagist/1720"
-														target="_blank">
-														<img src="https://keshurgojiya.github.io/Wild-Culture-Sunday-Edition-New-Template/images/third.jpg"
-															alt="The Way of the Collagist" width="220" height="220"
-															style="display:block; border:0;">
-													</a>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
+              <!-- ARTICLE 1: Text Right | Image Right -->
+              <tr>
+                <td class="article-row-td" style="padding:32px 40px;">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                    <tr>
+                      <!-- Text -->
+                      <td class="article-cell-text" valign="middle" width="280" style="text-align:right; padding-right:20px; font-family:Georgia,'Times New Roman',serif;">
+                        <p style="margin:0 0 10px 0; font-family:Georgia,'Times New Roman',serif; font-size:20px; line-height:27px; color:#1a1a1a; text-transform:uppercase;">
+                          How to Think Like<br><strong>a Commoner</strong>
+                        </p>
+                        <p style="margin:0 0 8px 0; font-family:Georgia,'Times New Roman',serif; font-size:15px; line-height:23px; color:#444444;">
+                          Now more than ever we can benefit from a better understanding of how to share our common resources.
+                        </p>
+                        <p style="margin:0; font-family:Georgia,'Times New Roman',serif; font-size:13px; line-height:20px; color:#777777; font-style:italic;">
+                          By David Bollier
+                        </p>
+                      </td>
+                      <!-- Spacer -->
+                      <td class="spacer-col" width="20" style="font-size:0; line-height:0; mso-line-height-rule:exactly;">&nbsp;</td>
+                      <!-- Image -->
+                      <td class="article-cell-img article-img" valign="middle" width="220" align="right">
+                        <a href="https://wildculture.com/article/think-commoner/2039" target="_blank" style="display:block; line-height:0; font-size:0;">
+                          <img src="https://keshurgojiya.github.io/Wild-Culture-Sunday-Edition-New-Template/images/first.jpg"
+                            alt="How to Think Like a Commoner"
+                            width="220" height="220"
+                            style="display:block; border:0; -ms-interpolation-mode:bicubic; width:220px; height:220px;">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
 
-							</table>
-						</td>
-					</tr>
-					<!-- END ARTICLES BACKGROUND WRAPPER -->
+              <!-- Divider -->
+              <tr>
+                <td style="padding:0 40px;">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+                    <tr><td style="font-size:0; line-height:0;">&nbsp;</td></tr>
+                  </table>
+                </td>
+              </tr>
 
-					<!-- CTA / SOCIAL -->
-					<tr>
-						<td class="cta-area">
-							<hr class="divider">
-							<p style="padding-top: 25px;">
-								<strong><a href="http://www.wildculture.com/content/register" target="_blank">Join the
-										Mailing List</a></strong>&nbsp;&nbsp;·&nbsp;&nbsp;
-								<a href="https://www.facebook.com/WildCultureOnline"
-									target="_blank">Facebook</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-								<a href="https://twitter.com/Wild_Culture" target="_blank">Twitter</a>
-							</p>
-							<p style="margin-top:12px;">
-								Like what we do?&nbsp;
-								<a href="https://www.wildculture.com/article/donate-help-wild-culture-flourish/1617"
-									target="_blank"><strong>Please Donate Here</strong></a>
-							</p>
-						</td>
-					</tr>
+              <!-- ARTICLE 2: Image Left | Text Right -->
+              <tr>
+                <td class="article-row-td" style="padding:32px 40px;">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                    <tr>
+                      <!-- Image -->
+                      <td class="article-cell-img article-img" valign="middle" width="220" align="left">
+                        <a href="https://wildculture.com/article/seeing-strangers-notes-photographers-life/2038" target="_blank" style="display:block; line-height:0; font-size:0;">
+                          <img src="https://keshurgojiya.github.io/Wild-Culture-Sunday-Edition-New-Template/images/second.jpg"
+                            alt="Seeing Strangers"
+                            width="220" height="220"
+                            style="display:block; border:0; -ms-interpolation-mode:bicubic; width:220px; height:220px;">
+                        </a>
+                      </td>
+                      <!-- Spacer -->
+                      <td class="spacer-col" width="20" style="font-size:0; line-height:0; mso-line-height-rule:exactly;">&nbsp;</td>
+                      <!-- Text -->
+                      <td class="article-cell-text" valign="middle" width="280" style="text-align:left; padding-left:20px; font-family:Georgia,'Times New Roman',serif;">
+                        <p style="margin:0 0 10px 0; font-family:Georgia,'Times New Roman',serif; font-size:20px; line-height:27px; color:#1a1a1a; text-transform:uppercase;">
+                          <strong>Seeing Strangers:</strong><br>Notes from a Photographer's Life
+                        </p>
+                        <p style="margin:0 0 8px 0; font-family:Georgia,'Times New Roman',serif; font-size:15px; line-height:23px; color:#444444;">
+                          A woman with a camera explains when and why she and her subjects click — and what's in it for her.
+                        </p>
+                        <p style="margin:0; font-family:Georgia,'Times New Roman',serif; font-size:13px; line-height:20px; color:#777777; font-style:italic;">
+                          By Debra Friedman
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
 
-					<!-- FOOTER LOGO -->
-					<tr>
-						<td class="footer-logo">
-							<a href="http://www.wildculture.com/" target="_blank">
-								<img src="https://keshurgojiya.github.io/Wild-Culture-Sunday-Edition-New-Template/images/jWC%20LOGO_1.jpg"
-									alt="Wild Culture Logo" width="180"
-									style="display:block; margin:0 auto; max-width:180px;">
-							</a>
-						</td>
-					</tr>
+              <!-- Divider -->
+              <tr>
+                <td style="padding:0 40px;">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+                    <tr><td style="font-size:0; line-height:0;">&nbsp;</td></tr>
+                  </table>
+                </td>
+              </tr>
 
-					<!-- FOOTER TEXT -->
-					<tr>
-						<td class="footer-text">
-							The Society for Preservation of Wild Culture. Copyright &copy; 2020. All rights
-							reserved.<br>
-							Our mailing address: <a
-								href="mailto:journal@wildculture.com"><span
-									class="__cf_email__"
-									data-cfemail="81ebeef4f3efe0edc1f6e8ede5e2f4edf5f4f3e4afe2eeec">journal@wildculture.com</span></a><br>
-							Twig letters by copperewe.com<br><br>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
+              <!-- ARTICLE 3: Text Right | Image Right -->
+              <tr>
+                <td class="article-row-td" style="padding:32px 40px;">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                    <tr>
+                      <!-- Text -->
+                      <td class="article-cell-text" valign="middle" width="280" style="text-align:right; padding-right:20px; font-family:Georgia,'Times New Roman',serif;">
+                        <p style="margin:0 0 10px 0; font-family:Georgia,'Times New Roman',serif; font-size:20px; line-height:27px; color:#1a1a1a; text-transform:uppercase;">
+                          The Way of<br><strong>the Collagist</strong>
+                        </p>
+                        <p style="margin:0 0 8px 0; font-family:Georgia,'Times New Roman',serif; font-size:15px; line-height:23px; color:#444444;">
+                          In the right hands, scraps of paper glued together can reward everyone.
+                        </p>
+                        <p style="margin:0; font-family:Georgia,'Times New Roman',serif; font-size:13px; line-height:20px; color:#777777; font-style:italic;">
+                          By David Young
+                        </p>
+                      </td>
+                      <!-- Spacer -->
+                      <td class="spacer-col" width="20" style="font-size:0; line-height:0; mso-line-height-rule:exactly;">&nbsp;</td>
+                      <!-- Image -->
+                      <td class="article-cell-img article-img" valign="middle" width="220" align="right">
+                        <a href="https://www.wildculture.com/article/way-collagist/1720" target="_blank" style="display:block; line-height:0; font-size:0;">
+                          <img src="https://keshurgojiya.github.io/Wild-Culture-Sunday-Edition-New-Template/images/third.jpg"
+                            alt="The Way of the Collagist"
+                            width="220" height="220"
+                            style="display:block; border:0; -ms-interpolation-mode:bicubic; width:220px; height:220px;">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+        <!-- END ARTICLES BACKGROUND WRAPPER -->
+
+        <!-- ===== CTA / SOCIAL ===== -->
+        <tr>
+          <td style="padding:0 40px; padding-top: 35px;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+              <tr><td style="border-top:1px solid #e0d9d0; font-size:0; line-height:0;">&nbsp;</td></tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding:24px 40px 8px; font-family:Georgia,'Times New Roman',serif; font-size:13px; line-height:22px; color:#555555; text-align:center;">
+            <strong><a href="http://www.wildculture.com/content/register" target="_blank" style="color:#8B4513; text-decoration:underline;">Join the Mailing List</a></strong>
+            &nbsp;&nbsp;·&nbsp;&nbsp;
+            <a href="https://www.facebook.com/WildCultureOnline" target="_blank" style="color:#8B4513; text-decoration:underline;">Facebook</a>
+            &nbsp;&nbsp;·&nbsp;&nbsp;
+            <a href="https://twitter.com/Wild_Culture" target="_blank" style="color:#8B4513; text-decoration:underline;">Twitter</a>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding:0 40px 28px; font-family:Georgia,'Times New Roman',serif; font-size:13px; line-height:22px; color:#555555; text-align:center;">
+            Like what we do?&nbsp;
+            <a href="https://www.wildculture.com/article/donate-help-wild-culture-flourish/1617" target="_blank" style="color:#8B4513; text-decoration:underline;"><strong>Please Donate Here</strong></a>
+          </td>
+        </tr>
+
+        <!-- ===== FOOTER LOGO ===== -->
+        <tr>
+          <td align="center" style="background-color:#ffffff;">
+            <a href="http://www.wildculture.com/" target="_blank" style="display:inline-block; line-height:0; font-size:0;">
+              <img src="https://keshurgojiya.github.io/Wild-Culture-Sunday-Edition-New-Template/images/jWC%20LOGO_1.jpg"
+                alt="Wild Culture Logo"
+                width="160"
+                style="display:block; border:0; max-width:160px; height:auto; margin:0 auto; -ms-interpolation-mode:bicubic;">
+            </a>
+          </td>
+        </tr>
+
+        <!-- ===== FOOTER TEXT ===== -->
+        <tr>
+          <td align="center" style="padding:14px 30px 28px; background-color:#ffffff; font-family:Georgia,'Times New Roman',serif; font-size:11px; line-height:18px; color:#aaaaaa; text-align:center;">
+            The Society for Preservation of Wild Culture. Copyright &copy; 2020. All rights reserved.<br>
+            Our mailing address:&nbsp;<a href="mailto:journal@wildculture.com" style="color:#aaaaaa; text-decoration:none;">journal@wildculture.com</a><br>
+            Twig letters by copperewe.com<br><br>
+            <a href="*|UNSUB|*" style="color:#aaaaaa; text-decoration:underline;">Unsubscribe</a>
+            &nbsp;|&nbsp;
+            <a href="*|UPDATE_PROFILE|*" style="color:#aaaaaa; text-decoration:underline;">Update Preferences</a>
+          </td>
+        </tr>
+
+      </table>
+      <!-- /Main container -->
+
+    </td>
+  </tr>
+</table>
+<!-- /Outer wrapper -->
+
 </body>
+</html>
