@@ -1,875 +1,401 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="initial-scale=1.0" style="-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css">
-<title>*|MC:SUBJECT|*</title>
-
-<style type="text/css">
-		#outlook a{
-			padding:0;
-		}
-		.ReadMsgBody{
-			width:100%;
-		}
-		.ExternalClass{
-			width:100%;
-		}
-		.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{
-			line-height:100%;
-		}
-		body{
-			-webkit-text-size-adjust:100%;
-			-ms-text-size-adjust:100%;
-			-webkit-font-smoothing:antialiased;
-			margin:0 !important;
-			padding:0 !important;
-			width:100% !important;
-		}
-		body,table,td,p,a,li,blockquote{
-			-webkit-text-size-adjust:100%;
-			-ms-text-size-adjust:100%;
-		}
-		table,td{
-			mso-table-lspace:0pt;
-			mso-table-rspace:0pt;
-		}
-		img{
-			-ms-interpolation-mode:bicubic;
-		}
-		body{
-			margin:0;
-			padding:0;
-		}
-		img{
-			border:0;
-			height:auto;
-			line-height:100%;
-			outline:none;
-			text-decoration:none;
-		}
-		table{
-			border-collapse:collapse !important;
-		}
-		body,#bodyTable,#bodyCell{
-			height:100% !important;
-			margin:0;
-			padding:0;
-			width:100% !important;
-		}
-		#bodyCell{
-			padding:20px;
-		}
-	/*
-	@tab Page
-	@section background style
-	@tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
-	@theme page
-	*/
-		body,#bodyTable{
-			/*@editable*/background-color:#FFFFFF;
-		}
-	/*
-	@tab Page
-	@section email Background
-	@tip Set the Background for your email.
-	*/
-		#templateContainer{
-			/*@editable*/background-color:#ffffff;
-			/*@tab Page
-@section heading 1
-@tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
-@style heading 1*/;:h1 {
-	/*@editable*/ color: #00abd9;
-			display:block;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:25px;
-			/*@editable*/font-style:normal;
-			/*@editable*/font-weight:bold;
-			/*@editable*/line-height:100%;
-			/*@editable*/letter-spacing:normal;
-			margin-top:0;
-			margin-right:0;
-			margin-bottom:0;
-			margin-left:0;
-			/*@editable*/text-align:center;
-		}
-	/*
-	@tab Page
-	@section heading 2
-	@tip Set the styling for all second-level headings in your emails.
-	@style heading 2
-	*/
-		h2{
-			/*@editable*/color:#404040 !important;
-			display:block;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:20px;
-			/*@editable*/font-style:normal;
-			/*@editable*/font-weight:bold;
-			/*@editable*/line-height:100%;
-			/*@editable*/letter-spacing:normal;
-			margin-top:0;
-			margin-right:0;
-			margin-bottom:10px;
-			margin-left:0;
-			/*@editable*/text-align:left;
-		}
-	/*
-	@tab Page
-	@section heading 3
-	@tip Set the styling for all third-level headings in your emails.
-	@style heading 3
-	*/
-		h3{
-			/*@editable*/color:#000000;
-			display:block;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:16px;
-			/*@editable*/font-style:normal;
-			/*@editable*/font-weight:bold;
-			/*@editable*/line-height:100%;
-			/*@editable*/letter-spacing:normal;
-			/*@editable*/text-align:center;
-		}
-	/*
-	@tab Page
-	@section heading 4
-	@tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
-	@style heading 4
-	*/
-		h4{
-			/*@editable*/color:#459f9c;
-			display:block;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:14px;
-			/*@editable*/font-style:normal;
-			/*@editable*/font-weight:normal;
-			/*@editable*/line-height:100%;
-			/*@editable*/letter-spacing:normal;
-			margin-top:0;
-			margin-right:0;
-			margin-bottom:10px;
-			margin-left:0;
-			/*@editable*/text-align:center;
-		}
-	/*
-	@tab Header
-	@section preheader style
-	@tip Set the background color and bottom border for your email's preheader area.
-	@theme header
-	*/
-		#templatePreheader{
-			/*@editable*/background-color:#FFFFFF;
-		}
-	/*
-	@tab Header
-	@section preheader text
-	@tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
-	*/
-		.preheaderContent{
-			/*@editable*/color:#999999;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:11px;
-			/*@editable*/line-height:125%;
-			/*@editable*/text-align:center;
-		}
-	/*
-	@tab Header
-	@section preheader link
-	@tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
-	*/
-		.preheaderContent a:link,.preheaderContent a:visited,.preheaderContent a .yshortcuts{
-			/*@editable*/color:#999999;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:none;
-		}
-	/*
-	@tab Header
-	@section header style
-	@tip Set the background color and borders for your email's header area.
-	@theme header
-	*/
-		#templateHeader{
-			/*@editable*/background-color:#FFFFFF;
-		}
-	/*
-	@tab Header
-	@section header Title
-	@tip Set the styling for your email's header text. Choose a size and color that is easy to read.
-	*/
-		.headerTitle{
-			/*@editable*/color:#77ccd0;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:24px;
-			/*@editable*/line-height:120%;
-			/*@editable*/text-align:center;
-			/*@editable*/font-weight:normal;
-		}
-	/*
-	@tab Header
-	@section header link
-	@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
-	*/
-		.headerContent a:link,.headerContent a:visited,.headerContent a .yshortcuts{
-			/*@editable*/color:#77ccd0;
-			/*@editable*/font-weight:normal;
-		}
-	/*
-	@tab Header
-	@section header text
-	@tip Set the styling for your email's header text. Choose a size and color that is easy to read.
-	*/
-		.headerContent{
-			/*@editable*/color:#415553;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:14px;
-			/*@editable*/line-height:120%;
-			/*@editable*/text-align:center;
-			/*@editable*/font-weight:normal;
-		}
-	/*
-	@tab Header
-	@section header link
-	@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
-	*/
-		.headerContent a:link,.headerContent a:visited,.headerContent a .yshortcuts{
-			/*@editable*/color:#77ccd0;
-			/*@editable*/font-weight:normal;
-		}
-	/*
-	@tab Body
-	@section body style
-	@tip Set the background color and borders for your email's body area.
-	*/
-		#templateBody{
-			/*@editable*/background-color:#FFFFFF;
-		}
-	/*
-	@tab Body
-	@section body Title
-	@tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
-	@theme main
-	*/
-		.bodyTitle{
-			/*@editable*/color:#3b2609;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:18px;
-			/*@editable*/line-height:120%;
-			/*@editable*/text-align:center;
-			/*@editable*/font-weight:bold;
-		}
-	/*
-	@tab Body
-	@section body text
-	@tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
-	@theme main
-	*/
-		.bodyContent{
-			/*@editable*/color:#3b2609;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:14px;
-			/*@editable*/line-height:120%;
-			/*@editable*/text-align:center;
-			/*@editable*/font-weight:normal;
-		}
-	/*
-	@tab Body
-	@section body link
-	@tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
-	*/
-		.bodyContent a:link,.bodyContent a:visited,.bodyContent a .yshortcuts{
-			/*@editable*/color:#3b2609;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:none;
-		}
-	/*
-	@tab Body
-	@section content Title
-	@tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
-	@theme main
-	*/
-		.contentTitle{
-			/*@editable*/color:#3b2609;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:18px;
-			/*@editable*/line-height:120%;
-			/*@editable*/text-align:left;
-			/*@editable*/font-weight:normal;
-		}
-	/*
-	@tab Body
-	@section content text
-	@tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
-	@theme main
-	*/
-		.contentText{
-			/*@editable*/color:#3b2609;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:12px;
-			/*@editable*/line-height:120%;
-			/*@editable*/text-align:left;
-			/*@editable*/font-weight:normal;
-		}
-	/*
-	@tab Body
-	@section body link
-	@tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
-	*/
-		.contentText a:link,.contentText a:visited,.contentText a .yshortcuts{
-			/*@editable*/color:#3b2609;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:none;
-		}
-		.templateColumnContainer{
-			max-width:570px;
-		}
-	/*
-	@tab Columns
-	@section column style
-	@tip Set the background color and borders for your email's column area.
-	*/
-		#templateColumns{
-			/*@editable*/background-color:#f9ab08;
-		}
-	/*
-	@tab Columns
-	@section left column text
-	@tip Set the styling for your email's left column content text. Choose a size and color that is easy to read.
-	*/
-		.leftColumnContent{
-			/*@editable*/color:#FFFFFF;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:14px;
-			/*@editable*/line-height:150%;
-			/*@editable*/text-align:center;
-		}
-	/*
-	@tab Columns
-	@section left column link
-	@tip Set the styling for your email's left column content links. Choose a color that helps them stand out from your text.
-	*/
-		.leftColumnContent a:link,.leftColumnContent a:visited,.leftColumnContent a .yshortcuts{
-			/*@editable*/color:#FFFFFF;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:underline;
-		}
-	/*
-	@tab Columns
-	@section left column text
-	@tip Set the styling for your email's left column content text. Choose a size and color that is easy to read.
-	*/
-		.leftColumnContent2{
-			/*@editable*/color:#FFFFFF;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:14px;
-			/*@editable*/line-height:150%;
-			background-color:#f9ab08;
-			/*@editable*/text-align:center;
-			border-left:10px #FFFFFF solid;
-		}
-	/*
-	@tab Columns
-	@section left column link
-	@tip Set the styling for your email's left column content links. Choose a color that helps them stand out from your text.
-	*/
-		.leftColumnContent2 a:link,.leftColumnContent2 a:visited,.leftColumnContent2 a .yshortcuts{
-			/*@editable*/color:#FFFFFF;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:underline;
-		}
-	/*
-	@tab Columns
-	@section center column text
-	@tip Set the styling for your email's center column content text. Choose a size and color that is easy to read.
-	*/
-		.centerColumnContent{
-			/*@editable*/color:#FFFFFF;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:12px;
-			/*@editable*/line-height:100%;
-			background-color:#f9ab08;
-			/*@editable*/text-align:left;
-		}
-	/*
-	@tab Columns
-	@section center column text
-	@tip Set the styling for your email's center column content text. Choose a size and color that is easy to read.
-	*/
-		.centerColumnContenthead{
-			/*@editable*/color:#FFFFFF;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:16px;
-			/*@editable*/line-height:100%;
-			background-color:#f9ab08;
-			/*@editable*/text-align:center;
-		}
-	/*
-	@tab Columns
-	@section center column link
-	@tip Set the styling for your email's center column content links. Choose a color that helps them stand out from your text.
-	*/
-		.centerColumnContent a:link,.centerColumnContent a:visited,.centerColumnContent a .yshortcuts{
-			/*@editable*/color:#FFFFFF;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:underline;
-		}
-	/*
-	@tab Columns
-	@section right column text
-	@tip Set the styling for your email's right column content text. Choose a size and color that is easy to read.
-	*/
-		.rightColumnContent{
-			/*@editable*/color:#FFFFFF;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:14px;
-			/*@editable*/line-height:150%;
-			background-color:#c4dbfd;
-			padding-top:5px;
-			padding-right:5px;
-			padding-bottom:5px;
-			padding-left:5px;
-			/*@editable*/text-align:center;
-		}
-	/*
-	@tab Columns
-	@section right column link
-	@tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
-	*/
-		.rightColumnContent a:link,.rightColumnContent a:visited,.rightColumnContent a .yshortcuts{
-			/*@editable*/color:#FFFFFF;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:underline;
-		}
-		.leftColumnContent img,.rightColumnContent img{
-			display:inline;
-			height:auto;
-			max-width:280px;
-		}
-	/*
-	@tab Footer
-	@section footer style
-	@tip Set the background color and borders for your email's footer area.
-	@theme footer
-	*/
-		#templateFooter{
-			/*@editable*/background-color:#77ccd0;
-		}
-	/*
-	@tab Footer
-	@section footer text
-	@tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
-	@theme footer
-	*/
-		.footerContent{
-			/*@editable*/color:#FFFFFF;
-			/*@editable*/font-family:'Open Sans', Arial, Helvetica, sans-serif;
-			/*@editable*/font-size:12px;
-			/*@editable*/line-height:120%;
-			/*@editable*/text-align:left;
-			/*@editable*/background-color:#77ccd0;
-		}
-	/*
-	@tab Footer
-	@section footer link
-	@tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
-	*/
-		.footerContent a:link,.footerContent a:visited,.footerContent a .yshortcuts,.footerContent a span{
-			/*@editable*/color:#FFFFFF;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:none;
-		}
-		.footerTd a a:link,.footerTd a:visited,.footerTd a .yshortcuts,.footerTd a span{
-			/*@editable*/color:#979797;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:none;
-		}
-	/*
-	@tab Body
-	@section Header Background Image
-	@tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
-	@theme main
-	*/
-		.bodyHeaderBG{
-			/*@editable*/background-image:url(https://gallery.mailchimp.com/b6c930535dc57b216d095bf24/images/edf483d5-72a9-449b-a17c-bff75e553be0.jpg);
-			/*@editable*/background-color:#FFFFFF;
-			/*@editable*/background-repeat:no-repeat !important;
-			-webkit-background-size:cover;
-			-moz-background-size:cover;
-			-o-background-size:cover;
-			background-size:cover;
-			background-position:center center;
-			/*@editable*/max-width:800px;
-			/*@editable*/max-height:618px;
-		}
-	@media only screen and (max-width: 599px){
-		body{
-			width:auto !important;
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Journal of Wild Culture – Sunday Edition</title>
+	<style type="text/css">
+		/* Reset */
+		body,
+		#bodyTable {
+			margin: 0 !important;
+			padding: 0 !important;
+			width: 100% !important;
 		}
 
-}	@media only screen and (max-width: 599px){
-		a{
-			text-decoration:none;
+		body {
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			background-color: #f4f0eb;
 		}
 
-}	@media only screen and (max-width: 599px){
-		td[class=hide]{
-			width:0 !important;
-			display:none;
+		table,
+		td {
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+			border-collapse: collapse !important;
 		}
 
-}	@media only screen and (max-width: 599px){
-		img[class=images]{
-			width:100% !important;
-			display:block !important;
-			height:auto !important;
+		img {
+			border: 0;
+			height: auto;
+			line-height: 100%;
+			outline: none;
+			text-decoration: none;
+			-ms-interpolation-mode: bicubic;
+			display: block;
 		}
 
-}	@media only screen and (max-width: 599px){
-		table[class=main],td[class=main]{
-			width:100% !important;
-			display:block !important;
+		a {
+			color: inherit;
 		}
 
-}	@media only screen and (max-width: 599px){
-		table[class=maintemplate]{
-			max-width:630px !important;
-			width:100% !important;
-			display:block !important;
-			background-color:#FFFFFF;
+		/* Wrapper */
+		#templateContainer {
+			max-width: 620px;
+			margin: 0 auto;
+			background-color: #ffffff;
 		}
 
-}	@media only screen and (max-width: 599px){
-		td[class=test-center]{
-			text-align:center !important;
+		/* Header */
+		.header-logo img {
+			max-width: 100%;
+			height: auto;
 		}
 
-}	@media only screen and (max-width: 599px){
-		td[class=box1]{
-			width:100% !important;
-			display:block !important;
-			max-width:250px !important;
-			float:none !important;
-			margin:0 auto !important;
-			padding-bottom:15px !important;
+		/* Title area */
+		.edition-title {
+			font-family: Georgia, 'Times New Roman', serif;
+			font-size: 13px;
+			color: #888888;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			text-align: center;
+			padding: 18px 20px 4px;
 		}
 
-}	@media only screen and (max-width: 599px){
-		td[class=box2]{
-			width:100% !important;
-			display:block !important;
-			max-width:250px !important;
-			float:none !important;
-			margin:0 auto !important;
+		.edition-name {
+			font-family: Georgia, 'Times New Roman', serif;
+			font-size: 22px;
+			color: #3a3a3a;
+			text-align: center;
+			padding: 2px 20px 4px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
 		}
 
-}	@media only screen and (max-width: 480px){
-		body{
-			width:auto !important;
+		.edition-date {
+			font-family: Georgia, 'Times New Roman', serif;
+			font-size: 13px;
+			color: #aaaaaa;
+			text-align: center;
+			padding: 2px 20px 18px;
 		}
 
-}	@media only screen and (max-width: 480px){
-		a{
-			text-decoration:none;
+		.divider {
+			border: none;
+			border-top: 1px solid #e0d9d0;
+			margin: 0 40px;
 		}
 
-}	@media only screen and (max-width: 480px){
-		td[class=hide]{
-			width:0 !important;
-			display:none;
+		/* Article row */
+		.article-row {
+			padding: 32px 40px;
+			border-bottom: 1px solid #f0ebe4;
 		}
 
-}	@media only screen and (max-width: 480px){
-		img[class=images]{
-			width:100% !important;
-			display:block !important;
-			height:auto !important;
+		.article-img img {
+			width: 220px;
+			height: 220px;
+			object-fit: cover;
 		}
 
-}	@media only screen and (max-width: 480px){
-		table[class=main],td[class=main]{
-			width:100% !important;
-			display:block !important;
+		.article-text-right {
+			text-align: right;
 		}
 
-}	@media only screen and (max-width: 480px){
-		table[class=maintemplate]{
-			max-width:630px !important;
-			width:100% !important;
-			display:block !important;
-			background-color:#FFFFFF;
+		.article-text-left {
+			text-align: left;
 		}
 
-}	@media only screen and (max-width: 480px){
-		td[class=test-center]{
-			text-align:center !important;
+		.article-title {
+			font-family: Georgia, 'Times New Roman', serif;
+			font-size: 20px;
+			line-height: 26px;
+			color: #1a1a1a;
+			text-transform: uppercase;
+			margin: 0 0 10px 0;
 		}
 
-}	@media only screen and (max-width: 480px){
-		td[class=box1]{
-			width:100% !important;
-			display:block !important;
-			max-width:250px !important;
-			float:none !important;
-			margin:0 auto !important;
-			padding-bottom:15px !important;
+		.article-desc {
+			font-family: Georgia, 'Times New Roman', serif;
+			font-size: 15px;
+			line-height: 23px;
+			color: #444444;
+			margin: 0;
 		}
 
-}	@media only screen and (max-width: 480px){
-		td[class=box2]{
-			width:100% !important;
-			display:block !important;
-			max-width:250px !important;
-			float:none !important;
-			margin:0 auto !important;
+		.article-author {
+			font-family: Georgia, 'Times New Roman', serif;
+			font-size: 14px;
+			color: #777777;
+			margin: 8px 0 0;
+			font-style: italic;
 		}
 
-}	@media only screen and (max-width: 320px){
-		body{
-			width:auto !important;
+		/* Social / CTA */
+		.cta-area {
+			padding: 28px 40px;
+			text-align: center;
 		}
 
-}	@media only screen and (max-width: 320px){
-		a{
-			text-decoration:none;
+		.cta-area p {
+			font-family: Georgia, 'Times New Roman', serif;
+			font-size: 13px;
+			line-height: 22px;
+			color: #555555;
+			margin: 0;
 		}
 
-}	@media only screen and (max-width: 320px){
-		td[class=hide]{
-			width:0 !important;
-			display:none;
+		.cta-area a {
+			color: #8B4513;
+			text-decoration: underline;
 		}
 
-}	@media only screen and (max-width: 320px){
-		img[class=images]{
-			width:100% !important;
-			display:block !important;
-			height:auto !important;
+		/* Footer */
+		.footer-logo {
+			padding: 24px 20px 12px;
+			text-align: center;
 		}
 
-}	@media only screen and (max-width: 320px){
-		table[class=main],td[class=main]{
-			width:100% !important;
-			display:block !important;
+		.footer-logo img {
+			max-width: 120px;
+			margin: 0 auto;
 		}
 
-}	@media only screen and (max-width: 320px){
-		table[class=maintemplate]{
-			max-width:630px !important;
-			width:100% !important;
-			display:block !important;
-			background-color:#FFFFFF;
+		.footer-text {
+			font-family: Georgia, 'Times New Roman', serif;
+			font-size: 11px;
+			line-height: 18px;
+			color: #aaaaaa;
+			text-align: center;
+			padding: 0 30px 28px;
 		}
 
-}	@media only screen and (max-width: 320px){
-		td[class=test-center]{
-			text-align:center !important;
+		.footer-text a {
+			color: #aaaaaa;
+			text-decoration: none;
 		}
 
-}	@media only screen and (max-width: 320px){
-		td[class=box1]{
-			width:100% !important;
-			display:block !important;
-			max-width:250px !important;
-			float:none !important;
-			margin:0 auto !important;
-			padding-bottom:15px !important;
-		}
+		/* Responsive */
+		@media only screen and (max-width: 599px) {
+			#templateContainer {
+				width: 100% !important;
+			}
 
-}	@media only screen and (max-width: 320px){
-		td[class=box2]{
-			width:100% !important;
-			display:block !important;
-			max-width:250px !important;
-			float:none !important;
-			margin:0 auto !important;
-		}
+			.article-row {
+				padding: 24px 20px !important;
+			}
 
-}</style></head>
-<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="font-family: Arial, Helvetica, sans-serif;">
-<center>
-  <table width="100%" border="0" cellspacing="0" cellpadding="0" id="bodyTable" class="main" style="font-family:Arial, Helvetica, sans-serif;">
-    <tr>
-      <td valign="top"><table width="630" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF;font-family: Arial, Helvetica, sans-serif;" class="maintemplate">
-          <tr>
-            <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                      <tr>
-                        <td valign="top" background="https://gallery.mailchimp.com/3ac161a09ec4fd64736cfc5ac/images/11f22ce9-b00a-4e06-bbb8-34f515272229.jpg" style="background-image:url(https://gallery.mailchimp.com/3ac161a09ec4fd64736cfc5ac/images/11f22ce9-b00a-4e06-bbb8-34f515272229.jpg); background-position:top left; background-repeat:no-repeat; background-color:#FFFFFF; background-size:100%;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <tr>
-                              <td width="15" style="font-size:0 !important; line-height:0 !important;"></td>
-                              <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                  <tr>
-                                    <td height="25" style="font-size:0 !important; line-height:0 !important;"></td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center" valign="middle" mc:edit="logo1"><a href="http://www.wildculture.com/?utm_source=brevo&utm_campaign=Wild Culture Sunday Edition April 19 2020&utm_medium=email" target="_blank"><img alt="Logo" class="images" src="https://keshurgojiya.github.io/wildculture-email-template/images/JWC Letters.jpg" style=" max-width:554px; display:inline-block; font-size:0px; line-height:0px; border:0px;" width="554"></a></td>
-                                  </tr>
-                                </table></td>
-                              <td width="15" style="font-size:0 !important; line-height:0 !important;"></td>
-                            </tr>
-                          </table></td>
-                      </tr>
-                    </table></td>
-                </tr>
-                <tr>
-                  <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                      <tr>
-                        <td width="15" style="font-size:0 !important; line-height:0 !important;"></td>
-                        <td valign="top" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size:28px; line-height:26px; color:#000000; text-transform:uppercase; text-align:center;" mc:edit="logotext"><span style="color:#808080"><span style="font-size:14px"><span style="font-family:verdana,geneva,sans-serif"><span style="line-height:34px">The Journal of Wild Culture</span></span></span></span><br>
-<span style="color:#996666"><strong>S</strong></span><span style="color:#FF8C00"><strong>U</strong></span><span style="color:#B22222"><strong>N</strong></span><span style="color:#DAA520"><strong>D</strong></span><span style="color:#FF8C00"><strong>A</strong></span><span style="color:#A52A2A"><strong>Y</strong></span><span style="color:#8B4513"><strong> </strong></span><span style="color:#B22222"><strong>E</strong></span><span style="color:#800000"><strong>D</strong></span><span style="color:#FF0000"><strong>I</strong></span><span style="color:#DAA520"><strong>T</strong></span><span style="color:#B22222"><strong>I</strong></span><span style="color:#996666"><strong>O</strong></span><span style="color:#FF8C00"><strong>N</strong></span><br>
-<span style="color:#808080"><span style="font-size:18px">April 19, 2020</span></span></td>
-                        <td width="15" style="font-size:0 !important; line-height:0 !important;"></td>
-                      </tr>
-                    </table></td>
-                </tr>
-                <tr>
-                  <td height="45" style="font-size:0 !important; line-height:0 !important;"></td>
-                </tr>
-                <tr>
-                  <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                      <tr>
-                        <td valign="top" style="background-image:url(https://keshurgojiya.github.io/wildculture-email-template/images/W-CULTURE-ICON-LIGHT-GREEN.png); background-repeat:no-repeat; background-position:center;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <tr>
-                              <td valign="top" width="100%" style="padding: 50px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                  <tr mc:repeatable>
-                                    <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                        <tr>
-                                          <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                              <tr>
-                                                <td valign="top" class="box1" width="250"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                                    <tr>
-                                                      <td valign="top" align="right" style="font-family: Arial, Helvetica, sans-serif; font-size:22px; line-height:20px; color:#000000; text-transform:uppercase; text-align:right;" class="test-center" mc:edit="cont01"><p><span style="font-size:22px"><span style="font-family:tahoma,verdana,segoe,sans-serif"><strong>HOW </strong>TO THINK LIKE <br><strong>A COMMONER</strong></span></span></p>
-</td>
-                                                    </tr>
-                                                    <tr>
-                                                      <td height="5" style="font-size:0 !important; line-height:0 !important;"></td>
-                                                    </tr>
-                                                    <tr>
-                                                      <td valign="top" align="right" style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:16px; color:#000000; text-transform:none; text-align:right;" class="test-center" mc:edit="cont02"><p><span style="font-family:tahoma,verdana,segoe,sans-serif"><span style="font-size:18px">Now more than ever we can benefit from a better understanding of how to share our common resources. <br> <strong>By David Bollier.</strong></span></span></p>
-</td>
-                                                    </tr>
-                                                  </table></td>
-                                                <td width="20" style="font-size:0 !important; line-height:0 !important;" class="hide"></td>
-                                                <td valign="top" class="box2" width="250" align="left" mc:edit="cont03"><br>
-<a href="https://wildculture.com/article/think-commoner/2039"><img data-file-id="5613477" height="250" src="https://keshurgojiya.github.io/wildculture-email-template/images/first.jpg" style="border: 0px  ; width: 250px; height: 250px; margin: 0px;" width="250"></a></td>
-                                              </tr>
-                                            </table></td>
-                                        </tr>
-                                        <tr>
-                                          <td height="40" style="font-size:0 !important; line-height:0 !important;"></td>
-                                        </tr>
-                                      </table></td>
-                                  </tr>
-                                  <tr mc:repeatable>
-                                    <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                        <tr>
-                                          <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                              <tr>
-                                                <td valign="top" class="box1" width="250" align="right" mc:edit="cont04"><br>
-<a href="https://wildculture.com/article/seeing-strangers-notes-photographers-life/2038"><img data-file-id="5612581" height="249" src="https://keshurgojiya.github.io/wildculture-email-template/images/second.jpg" style="border-image: none 100% / 1 / 0 stretch; width: 250px; height: 249px; margin: 0px;" width="250"></a></td>
-                                                <td width="20" style="font-size:0 !important; line-height:0 !important;" class="hide"></td>
-                                                <td valign="top" class="box2" width="250"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                                    <tr>
-                                                      <td valign="top" align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:20px; line-height:20px; color:#000000; text-transform:uppercase; text-align:left;" class="test-center" mc:edit="cont05"><p><span style="font-family:tahoma,verdana,segoe,sans-serif"><span style="font-size:22px"><strong>Seeing StraNgers: <br></strong>Notes FROM A PHOTOGRAPHER'S LIFE</span></span></p>
-</td>
-                                                    </tr>
-                                                    <tr>
-                                                      <td height="5" style="font-size:0 !important; line-height:0 !important;"></td>
-                                                    </tr>
-                                                    <tr>
-                                                      <td valign="top" align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:16px; color:#000000; text-transform:none; text-align:left;" class="test-center" mc:edit="cont06"><p><span style="font-family:tahoma,verdana,segoe,sans-serif"><span style="font-size:18px">A woman with a camera explains when and why she and her subjects click — and what's in it for her. <strong>By Debra Friedman.</strong></span></span><br>
-&nbsp;</p>
-</td>
-                                                    </tr>
-                                                  </table></td>
-                                              </tr>
-                                            </table></td>
-                                        </tr>
-                                        <tr>
-                                          <td height="40" style="font-size:0 !important; line-height:0 !important;"></td>
-                                        </tr>
-                                      </table></td>
-                                  </tr>
-                                  <tr mc:repeatable>
-                                    <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                        <tr>
-                                          <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                              <tr>
-                                                <td valign="top" class="box1" width="250"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                                    <tr>
-                                                      <td valign="top" align="right" style="font-family: Arial, Helvetica, sans-serif; font-size:22px; line-height:22px; color:#000000; text-transform:uppercase; text-align:right;" class="test-center" mc:edit="cont07"><div style="text-align: right;"><span style="font-size:22px"><span style="font-family:tahoma,verdana,segoe,sans-serif">THE WAY OF<strong> THE COLLAGIST</strong></span></span></div>
-</td>
-                                                    </tr>
-                                                    <tr>
-                                                      <td height="5" style="font-size:0 !important; line-height:0 !important;"></td>
-                                                    </tr>
-                                                    <tr>
-                                                      <td valign="top" align="right" style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:16px; color:#000000; text-transform:none; text-align:right;" class="test-center" mc:edit="cont08"><p><span style="font-size:18px"><span style="font-family:tahoma,verdana,segoe,sans-serif"></span>In the right hands, scraps of paper glued together can reward . . . everyone.<span style="font-family:tahoma,verdana,segoe,sans-serif"><strong>By <br> David Young.</strong></span></span></p>
-</td>
-                                                    </tr>
-                                                  </table></td>
-                                                <td width="20" style="font-size:0 !important; line-height:0 !important;" class="hide"></td>
-                                                <td valign="top" class="box2" width="250" align="left" mc:edit="cont09"><a href="https://www.wildculture.com/article/way-collagist/1720"><img data-file-id="5613485" height="250" src="https://keshurgojiya.github.io/wildculture-email-template/images/third.jpg" style="border-image: none 100% / 1 / 0 stretch; width: 250px; height: 250px; margin: 0px;" width="250"></a></td>
-                                              </tr>
-                                            </table></td>
-                                        </tr>
-                                        <tr>
-                                          <td height="40" style="font-size:0 !important; line-height:0 !important;"></td>
-                                        </tr>
-                                      </table></td>
-                                  </tr>
-                                  <tr>
-                                    <td height="25" style="font-size:0 !important; line-height:0 !important;"></td>
-                                  </tr>
-                                  <tr>
-                                    <td valign="top" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:18px; color:#000000; text-transform:none; text-align: center;" mc:edit="cont10"><p style="text-align: center;"><strong>JOIN the&nbsp;<a href="http://www.wildculture.com/content/register?utm_source=brevo&utm_campaign=Wild Culture Sunday Edition April 19 2020&utm_medium=email" target="_blank">MAILING LIST</a></strong><br>
-Like our <a href="https://www.facebook.com/WildCultureOnline?utm_source=brevo&utm_campaign=Wild Culture Sunday Edition April 19 2020&utm_medium=email" target="_blank">FACEBOOK</a> page<br>
-Follow us on <a href="https://twitter.com/Wild_Culture?utm_source=brevo&utm_campaign=Wild Culture Sunday Edition April 19 2020&utm_medium=email" target="_blank">Twitter</a><br>
-<br>
-Like what we do?<br>
-<a href="https://www.wildculture.com/article/donate-help-wild-culture-flourish/1617?utm_source=brevo&utm_campaign=Wild Culture Sunday Edition April 19 2020&utm_medium=email" target="_blank">PLEASE</a><a href="https://www.wildculture.com/article/donate-help-wild-culture-flourish/1617?utm_source=brevo&utm_campaign=Wild Culture Sunday Edition April 19 2020&utm_medium=email" target="_blank"> DONATE HERE</a><a href="https://www.wildculture.com/article/donate-help-wild-culture-flourish/1617?utm_source=brevo&utm_campaign=Wild Culture Sunday Edition April 19 2020&utm_medium=email">.</a></p>
-</td>
-                                  </tr>
-                                  <tr>
-                                </table></td>
-                              <td width="55" style="font-size:0 !important; line-height:0 !important;"></td>
-                            </tr>
-                          </table></td>
-                      </tr>
-                    </table></td>
-                </tr>
-                <tr>
-                  <td height="25" style="font-size:0 !important; line-height:0 !important;"></td>
-                </tr>
-                <tr>
-                  <td align="center" valign="middle"><a href="http://www.wildculture.com/?utm_source=brevo&utm_campaign=Wild Culture Sunday Edition April 19 2020&utm_medium=email" target="_blank"><img src="https://keshurgojiya.github.io/wildculture-email-template/images/jWC LOGO_1.jpg" style=" max-width:184px; display:inline-block; font-size:0px; line-height:0px; border:0px;" src="https://gallery.mailchimp.com/3ac161a09ec4fd64736cfc5ac/images/377811dc-b832-43be-8f7d-5eb8ef4b9c68.jpg" width="184" alt="Logo"></a></td>
-                </tr>
-                <tr>
-                  <td height="25" style="font-size:0 !important; line-height:0 !important;"></td>
-                </tr>
-                <tr>
-                  <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                      <tr>
-                        <td valign="top" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:18px; color:#000000; text-transform:none; text-align: center; padding-left:15px; padding-right:15px;" mc:edit="cont011">The Society for Preservation of Wild Culture. Copyright @2020<br>
-. All rights reserved<br>
-Our mailing address is:&nbsp;<a href="mailto:journal@wildculture.com" style="color:#000000; text-decoration:none;">journal@wildculture.com</a><br>
-<br>
-Twig letters by copperewe.com</td>
-                      </tr>
-                    </table></td>
-                </tr>
-                <tr>
-                  <td height="35" style="font-size:0 !important; line-height:0 !important;"></td>
-                </tr>
-              </table></td>
-          </tr>
-        </table></td>
-    </tr>
-  </table>
-</center>
+			.article-cell-img,
+			.article-cell-text {
+				display: block !important;
+				width: 100% !important;
+				text-align: center !important;
+			}
+
+			.article-cell-img {
+				padding-bottom: 16px !important;
+			}
+
+			.article-text-right,
+			.article-text-left {
+				text-align: center !important;
+			}
+
+			.article-img img {
+				width: 100% !important;
+				max-width: 280px !important;
+				height: auto !important;
+				margin: 0 auto !important;
+			}
+
+			.spacer-col {
+				display: none !important;
+				width: 0 !important;
+			}
+
+			.cta-area {
+				padding: 20px !important;
+			}
+
+			.divider {
+				margin: 0 20px !important;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" id="bodyTable" bgcolor="#f4f0eb">
+		<tr>
+			<td valign="top" align="center" style="padding: 20px 10px;">
+
+				<table width="620" border="0" cellspacing="0" cellpadding="0" id="templateContainer" align="center">
+
+					<!-- HEADER LOGO -->
+					<tr>
+						<td class="header-logo">
+							<a href="http://www.wildculture.com/" target="_blank">
+								<img src="https://keshurgojiya.github.io/wildculture-email-template/images/JWC Letters.jpg"
+									alt="Journal of Wild Culture" width="620" style="max-width:100%; display:block;">
+							</a>
+						</td>
+					</tr>
+
+					<!-- EDITION TITLE -->
+					<tr>
+						<td>
+							<p class="edition-title">The Journal of Wild Culture</p>
+							<p class="edition-name">&#x2728; Sunday Edition &#x2728;</p>
+							<p class="edition-date">April 19, 2020</p>
+							<hr class="divider">
+						</td>
+					</tr>
+
+					<!-- ARTICLES WRAPPER WITH BACKGROUND -->
+					<tr>
+						<td background="https://keshurgojiya.github.io/wildculture-email-template/images/W-CULTURE-ICON-LIGHT-GREEN.png"
+							style="background-image: url('https://keshurgojiya.github.io/wildculture-email-template/images/W-CULTURE-ICON-LIGHT-GREEN.png'); background-repeat: no-repeat; background-position: center center; background-size: 70%;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+								<!-- ARTICLE 1: Text Left / Image Right -->
+								<tr>
+									<td class="article-row">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td class="article-cell-text article-text-right" valign="middle"
+													width="260" style="padding-right: 20px;">
+													<p class="article-title">How to Think Like<br><strong>a
+															Commoner</strong></p>
+													<p class="article-desc">Now more than ever we can benefit from a
+														better understanding of how to share our common resources.</p>
+													<p class="article-author">By David Bollier</p>
+												</td>
+												<td class="spacer-col" width="20" style="font-size:0; line-height:0;">
+													&nbsp;</td>
+												<td class="article-cell-img article-img" valign="middle" width="220"
+													align="right">
+													<a href="https://wildculture.com/article/think-commoner/2039"
+														target="_blank">
+														<img src="https://keshurgojiya.github.io/wildculture-email-template/images/first.jpg"
+															alt="How to Think Like a Commoner" width="220" height="220"
+															style="display:block; border:0;">
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+
+								<!-- ARTICLE 2: Image Left / Text Right -->
+								<tr>
+									<td class="article-row">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td class="article-cell-img article-img" valign="middle" width="220"
+													align="left">
+													<a href="https://wildculture.com/article/seeing-strangers-notes-photographers-life/2038"
+														target="_blank">
+														<img src="https://keshurgojiya.github.io/wildculture-email-template/images/second.jpg"
+															alt="Seeing Strangers" width="220" height="220"
+															style="display:block; border:0;">
+													</a>
+												</td>
+												<td class="spacer-col" width="20" style="font-size:0; line-height:0;">
+													&nbsp;</td>
+												<td class="article-cell-text article-text-left" valign="middle"
+													width="260" style="padding-left: 20px;">
+													<p class="article-title"><strong>Seeing Strangers:</strong><br>Notes
+														from a Photographer's Life</p>
+													<p class="article-desc">A woman with a camera explains when and why
+														she and her subjects click — and what's in it for her.</p>
+													<p class="article-author">By Debra Friedman</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+
+								<!-- ARTICLE 3: Text Left / Image Right -->
+								<tr>
+									<td class="article-row">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td class="article-cell-text article-text-right" valign="middle"
+													width="260" style="padding-right: 20px;">
+													<p class="article-title">The Way of<br><strong>the
+															Collagist</strong></p>
+													<p class="article-desc">In the right hands, scraps of paper glued
+														together can reward everyone.</p>
+													<p class="article-author">By David Young</p>
+												</td>
+												<td class="spacer-col" width="20" style="font-size:0; line-height:0;">
+													&nbsp;</td>
+												<td class="article-cell-img article-img" valign="middle" width="220"
+													align="right">
+													<a href="https://www.wildculture.com/article/way-collagist/1720"
+														target="_blank">
+														<img src="https://keshurgojiya.github.io/wildculture-email-template/images/third.jpg"
+															alt="The Way of the Collagist" width="220" height="220"
+															style="display:block; border:0;">
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+
+							</table>
+						</td>
+					</tr>
+					<!-- END ARTICLES BACKGROUND WRAPPER -->
+
+					<!-- CTA / SOCIAL -->
+					<tr>
+						<td class="cta-area">
+							<p>
+								<strong><a href="http://www.wildculture.com/content/register" target="_blank">Join the
+										Mailing List</a></strong>&nbsp;&nbsp;·&nbsp;&nbsp;
+								<a href="https://www.facebook.com/WildCultureOnline"
+									target="_blank">Facebook</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+								<a href="https://twitter.com/Wild_Culture" target="_blank">Twitter</a>
+							</p>
+							<p style="margin-top:12px;">
+								Like what we do?&nbsp;
+								<a href="https://www.wildculture.com/article/donate-help-wild-culture-flourish/1617"
+									target="_blank"><strong>Please Donate Here</strong></a>
+							</p>
+						</td>
+					</tr>
+
+					<!-- FOOTER LOGO -->
+					<tr>
+						<td class="footer-logo">
+							<a href="http://www.wildculture.com/" target="_blank">
+								<img src="https://keshurgojiya.github.io/wildculture-email-template/images/jWC LOGO_1.jpg"
+									alt="Wild Culture Logo" width="120"
+									style="display:block; margin:0 auto; max-width:120px;">
+							</a>
+						</td>
+					</tr>
+
+					<!-- FOOTER TEXT -->
+					<tr>
+						<td class="footer-text">
+							The Society for Preservation of Wild Culture. Copyright &copy; 2020. All rights
+							reserved.<br>
+							Our mailing address: <a
+								href="/cdn-cgi/l/email-protection#acc6c3d9dec2cdc0ecdbc5c0c8cfd9c0d8d9dec982cfc3c1"><span
+									class="__cf_email__"
+									data-cfemail="81ebeef4f3efe0edc1f6e8ede5e2f4edf5f4f3e4afe2eeec">[email&#160;protected]</span></a><br>
+							Twig letters by copperewe.com<br><br>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
 </body>
-</html>
